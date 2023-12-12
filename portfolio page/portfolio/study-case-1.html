@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Case Study #1</title>
+    <meta name="description" content="BAT Analytics tells you all you need to know about your website traffic, without tracking or storing visitors' personal information.">
+
+    <link rel="stylesheet" href="assets/css/style-8.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0QKWNKZNM"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T0QKWNKZNM');
+</script>
+
+</head>
+
+
+<body>
+    
+<h1>Case Study - Task #1</h1>
+<br>
+  <h4><b>Introduction</b></h4>
+  <br>
+  <p>  The Purpose of these Case Studies is to show off my knowledge aquired during my studies and to show my work. These are problems of the real world where the Cloud Computing play an essential role of problem solving.</p>
+<h4><b>The tasks are accomplished using AWS Management Console and its Technologies</b></h4>
+<br>
+<p>For the first section of this Case Study, I was expected to outline the purpose of security group rules in the diagram below. Also, to explain how these security groups are working and analyse the security that is provided to an organization that has data stored in the Database shown.</p>
+<br>
+<img src="/portfolio page/portfolio/assets/img/task-1.png" alt="Task #1">
+<br>
+<h4>How I solved and explained the Purpose and how these Security Group works</h4>
+<br>
+<p>The purpose of security group is to make sure that all the data kept in database is safe through security. Security groups work by specifying types of traffic to go through stopping unauthorized data to access the database, where you can be able to track and manage the data. As stated by the rules of the security group this feature controls the inbound traffic. In this case we can see at the diagram that the security groups rule is authorizing ports TCP 443 and port TCP 80 traffic from the web tier ELB. Also, it is authorizing inbound traffic in app tier ELB TCP ports 80 and 8080. Finally, Security groups is authorizing the app tier in port 3306 inbound traffic from app tier ELB.  Security groups have a good level of protection but other levels of protection need to be taken in order to provide more layers of protection. 
+</p>
+<br>
+<h1>Case Study - Task #2</h1>
+<br>
+<p>For the second section of this Case Study, I was expected to study the diagram carefully. You work in online retail company as a cloud engineer. Due to the current situation with COVID-19 they currently have high traffic demands to both their web servers (located on their public subnets) and their application internal servers (located on their private subnets). Currently, the online business is their only way of generating income, so it is imperative that their infrastructure is available at all times. They have already suffered multiple database outages and need your help. Their infrastructure supports modern application architectures including microservices and container-based applications. They also would like to be in a position whereby the system monitors the infrastructure and services traffic dynamically. They require 99.999% uptime.
+</p>
+<br>
+<img src="/portfolio page/portfolio/assets/img/task-2.png" alt="Task #2">
+<br>
+<p><b>Problem 1:</b> The development team have asked you to review their current AWS architecture (as shown in the diagram above). They have asked you to explain in your own words recommendations that will improve the availability of the solution. </p>
+
+<p><b>Problem 2:</b> If there is a huge, continued spike in web traffic towards the App Servers over the Christmas period, explain and justify THREE inherently HA services the online retailer should take into consideration to help the overall availability of their application.</p>
+
+
+<h4>Check below the solutions that I gave to these issues</h4>
+<br>
+<p>In regards to question 2, in section 1, there is a diagram where it shows the app servers and the database. Looking at the database we can see that there is a problem where if the database has an outage, there is no other one to work as a replacement. The solution in this case is to implement one of the database services from AWS called RDS Multi-AZ where there is a feature named automatic fail over and this has high availability with automatic database failover, which means if your database fails another one takes over with no data loss. In section 2, If there is a huge, continued spike in web traffic towards the App Servers over the Christmas period, then some improvements can be done to help the availability of their application. There are three cloud services with High Availability that can help which are Elastic Load Balancing, Amazon Cloud Front and Amazon Route 53. Together they provide better traffic scale and balancing, low latency and high transfer speeds as well as sufficient numbers of DNS services.</p>
+
+<br>
+<p><a href="/portfolio page/index.html"><h4>Go Back to Portfolios</h4></a></p>
+</body>
+</html>
