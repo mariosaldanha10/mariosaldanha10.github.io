@@ -27,39 +27,141 @@
 
 <body>
 
-    <h1>Case Study: Clouds-Are-Us Cloud Engineering Project</h1>
+    <h2>Case Study: Clouds-Are-Us Cloud Engineering Project</h2>
 
     <h2>Introduction</h2>
-    <p>You have been hired as a cloud engineer for a new cloud computing start-up company called Clouds-Are-Us. Clouds-Are-Us has hired you to assist with setting up some of the networking infrastructure. You will report into the Clouds-Are-Us cloud engineering manager. The Clouds-Are-Us company has just launched some new products, and they are ready to share some information with prospective customers. They have 3 requirements that they wish you to complete. “Clouds-Are-Us will be launching a suite of services, in a couple of months. The company will specialise in the development of digital technology solutions, software design and agile software development and cloud computing consulting services.” <- Ensure to advertise this on their marketing page below in task 1.</p>
+    <p>You have been hired as a cloud engineer for a new cloud computing start-up company called Clouds-Are-Us. Clouds-Are-Us has hired you to assist with setting up some of the networking infrastructure. You will report into the Clouds-Are-Us cloud engineering manager. The Clouds-Are-Us company has just launched some new products, and they are ready to share some information with prospective customers.
+    <br>
+    They have 3 requirements that they wish you to complete
+    <br>
+    They have 3 requirements that they wish you to complete. “Clouds-Are-Us will be launching a suite of services, in a couple of months. The company will specialise in the development of digital technology solutions, software design and agile software development and cloud computing consulting services.”</p>
+    <br>
 
     <h2>Project Overview</h2>
-    <p>Clouds-Are-Us would like to setup a static website where customers can learn about their services. To host a static website, they have requested me to configure an Amazon S3 bucket and utilize simple static website hosting. They then wish me to upload some sample content to let customers know that their many services will be available soon (see information in introduction above). All of the website content should be uploaded to one bucket. They require secure, durable, highly scalable object storage. They need a simple web services interface to allow them to store and retrieve any amount of data from anywhere on the web.</p>
 
+   <h4>#task1</h4>
+    <p>Clouds-Are-Us would like to setup a static website where customers can learn about their services. To host a static website, they have requested me to configure an Amazon S3 bucket and utilize simple static website hosting. They then wish me to upload some sample content to let customers know that their many services will be available soon (see information in introduction above). All of the website content should be uploaded to one bucket. They require secure, durable, highly scalable object storage. They need a simple web services interface to allow them to store and retrieve any amount of data from anywhere on the web.</p>
     <p>Screenshot of my final static website (including short description of the Clouds-Are-Us services.)</p>
 
-    <img src="/assets/img/screenshots/Screenshot (306).png" alt="Task #1">
+    <h4>Screenshot 1</h4>
+   
+    <img src="/assets/img/screenshots/Screenshot (306).png">
+    <br>
+    <p>Screenshot of the final static website with short description requested by Cloud-Are-Us Services</p>
+    
+    <h4>Screenshot 2</h4>
+    <br>
+    <p>Amazon S3 Bucket configured to host a static website.</p>
+    <img src="/assets/img/screenshots/Screenshot (309).png">
+    <img src="/assets/img/screenshots/Screenshot (310).png">
+    <br>
 
-    <h3>Data on S3 and EC" with EBS.</h3>
+    <br>
+   
+    <h4>#task2</h4>
     <p>The company would like you to explain to them the key differences between storing data on S3 compared to storing data on EC2 with EBS. They wish to know use cases for each, find out what’s similar, what’s different and to provide a de-tailed analysis of each.</p>
+    <br>
 
-    <h3>The Key differences between storing data on S3 compared to store data on EC2 with EBS</h3>
+    <h4>The Key differences between storing data on S3 compared to store data on EC2 with EBS</h4>
     <p>In terms of storage when using S3 to store data in a company for example this resource is designed to store large amount of data and backup. On the other hand, the resources of storing data on EBS can be comparable to hard disks using in computers but virtualized. They differ in performance because ESB can have a better performance of S3. They both also have a high durability across different Availability Zones. The uses cases of Amazon S3 is that this resource can be used in Data Lake and big Data Analytics as well as Backup and restoration. On the other hand, EBS use cases are for Software Testing and Development, Business continuity and Enterprise-wide applications.</p>
 
     <p>In the medium term, the management at Clouds-Are-Us wishes to setup infrastructure utilizing high availability using the following illustration as a guide (as shown in Figure 1 below):</p>
 
     <img src="/assets/img/screenshots/clouds-are-us infra.png" alt="Infra Photo">
-    <p>website on group of load balanced web servers</p>
+    <br>
+    <p>Website on group of load balanced web servers</p>
 
-    <p>Demonstrate and create five Linux servers that use the start-up script provided (see below). The start-up script will install Linux updates, install the HTTP web service, and load a test that shows the name of the Web Server. Using these 5 Linux instances, set up an Application Load Balancer (ALB) that includes these web servers that need to add to a target group.</p>
+    <h4>#task3</h4>
+    <p>Create five Linux servers that use the start-up script provided (see below). The start-up script will install Linux updates, install the HTTP web service, and load a test that shows the name of the Web Server. Using these 5 Linux instances, set up an Application Load Balancer (ALB) that includes these web servers that need to add to a target group. Demonstrate that the ALB function is working correctly</p>
 
-    <p></p>
+    <h4>Screenshot 3</h4>
+    <img src="/assets/img/screenshots/Screenshot (312).png">
+    <br>
+    <p>Demonstration of 5 Linux servers being created using own VPC (digitech-webserver-vpc)</p>
+    <h4>Screenshot 4</h4>
+    <img src="/assets/img/screenshots/Screenshot (313).png">
+    <br>
+    <p>Demonstration of 5 Linux servers being created using own VPC (digitech-webserver-vpc)</p>
+    <h4>Screenshot 5</h4>
+    <img src="/assets/img/screenshots/Screenshot (308).png">
+    <br>
+    <p>Demonstration of Auto Load Balancer working correctly</p>
+    <br>
+    <h4>Screenshot 6</h4>
+    <img src="/assets/img/screenshots/Screenshot (313).png">
+    <br>
+    <p>Demontration of Linux Webservers added to a Target Group</p>
+    <br>
+    <h4>#task3</h4>
+    <p>Incorporate the DigiTech Website into the ASG/ALB configuration described above. When testing the ALB, the DigiTech Web page should be displayed along with your name, your student number, and the server's name.</p>
+    <br>
+    <h4>Screenshot 7</h4>
+    <img src="/assets/img/screenshots/Screenshot (314).png">
+    <br>
+    <p>Loading a test that shows the name of the webserver displaying along with my name, student number and server's name.</p>
+    <br>
+    <h4>#task4</h4>
+    <p>Clouds-Are-Us has contracted with the DigiTech corporation to host their website. The management at DigiTech wishes to automate the infrastructure deployment of their website and they would like to see a proof of concept. Your manager at Clouds-Are-Us would like you to set up an Auto-Scaling Group (ASG) integrated with an Application Load Balancer (ALB) on one of the subnets in a VPC that you will create (or a VPC that you will soon create). In addition to demonstrating this configuration, explain, using a real-world example, the benefits integrating the ASG combined with the ALB. Present the proposed proof of concepts to the cloud engineering manager in the form of a professional report.</p>
+    <h4>Screenshot 8</h4>
+    <img src="/assets/img/screenshots/Screenshot (343).png"><br>
+    <img src="/assets/img/screenshots/Screenshot (344).png"><br>
+    <br>
+    <p>Demonstration of setting up an Auto Scaling Group (ASG) integrated with an Application Load Balancer (ALB)</p>
+    <br>
+      <h4>Steps to configure Auto Scaling Group with Auto Load Balancer</h4>
+      <br>
+      <p>Step 1 – Create a VPC
+        A VPC was created on the Networking & Content Delivery Services dashboard using the option of create VPC and more which was named as digitech-webserver-vpc. The IPv4 CIDR block chosen was 10.1.0.0/16. Three Number of Availability Zones was chosen in order to provide High Availability. Two numbers of public subnets were chosen along with two numbers of private subnets. No NAT gateways was chosen. On VPC endpoints the S3 Gateway was chosen and on DNS options the DNS hostnames and DNS resolution were enabled.
+        <br>
+        <br>
+        Step 2 – Launch Template
+        The Launch Template name was defined by “digitech-webservers-template” and the Template version description was defined by “A webserver for my website”. The Auto Scaling Guidance was selected in order to help me out to configure an ASG after all. The AMI required was set up by Amazon Linux 2023 AMI and the Instance Type selected was t2.micro (free tier eligible), my own Key Pair was used named by Year4-Cloud-Class-key. On the Network Settings The Security Group named by “digitech-webserver-01” was selected and an Auto-assign Public IP was set and also Delete on Termination was set.
+        In order to create an ASG is necessary to Launch Template first where it will have the settings for the instances. These settings include AMI (Amazon Machine Image), the type of instance, the key pair and security group. The name of the Template was defined by “digitech-webservers-template”
+        <br>
+        <br>
+        Step 3 – Security Group
+        This security group is named by “digitech-webserver-01” where the inbound type rules is configured by HTTP and SSH where the source IP is set by Anywhere-IPv4 0.0.0.0/0 and the outbound type rules is configured by All Traffic where the destination is set by Anywhere-IPv4 0.0.0.0/0.
+        <br>
+        <br>
+        Step 4 – Load Balancers
+        This load balancer is named by “digitech-webserver-01” and in the configuration is using the “digitech-webserver-vpc” and mapping three Availability Zones such as us-east-1a (use1-az1), us-east-1b (use1-az2), us-east-1c (use1-az4) and using all the public subnets such as (digitech-webserver-subnet-public1-us-east-1a), (digitech-webserver-subnet-public2-us-east-1b) and (digitech-webserver-subnet-public3-us-east-1c). Finally, the security group is set by “digitech-webserver-01”.
+        <br>
+        <br>
+        Step 5 – Target Groups
+        The target type chosen was instances and the target group name was defined by digitech-webserver-01. The VPC selected was “digitech-webserver-vpc” and all the instances I have created before to make the task 2 were selected.
+        <br>
+        <br>
+        Step 6 – Auto Scaling Group
+        Step 1 – Chosen launch template: The ASG name was defined by “digitech-webservers-01” and the Launch Template chosen was “digitech-webservers-template <br>
+        Step 2 – Chose instance launch options: A VPC was chosen as “digitech-webserver-vpc” and the public subnets such as (digitech-webserver-subnet-public1-us-east-1a), (digitech-webserver-subnet-public2-us-east-1b) and(digitech-webserver-subnet-public3-us-east-1c) were chosen. <br>
+        Step 3 – Configure advanced options: An existing load balancer target group such as “digitech-webserver-01 | HTTP” was chosen.<br>
+        Step 4 – Configure group size and scaling: in this step all the configuration was left as it is. Step 5 – Add notifications: no notifications was added. 
+        Step 6 – Add Tags: no tags were added and the ASG was created.<br>
+        <br>
+        Note that there are several and necessary resources mentioned above to setup before create an Auto Scaling Group.
+      </p>
+
+
+    <h4>Professional Report of proposed proof of concepts to the cloud engineering manager</h4>
+      <P>Subject: Implementation of Auto Scaling Group with an Application Load Balancer for DigiTech Website</P>
+      <br>
+      <p>The objective of this architecture proof of concept is to demonstrate the deployment of a powerful and scalable infrastructure for hosting DigiTech’s website. Along with AWS providing its services of Auto Scaling Group and Application Load Balancer and how they work together and its advantages.
+      Details of the Implementation:
+      Virtual Private Cloud (VPC) is where you can manage and operate all your data within a secluded virtual network defined by you. There is the advantage of manage and use scalable infrastructure of AWS.
+      Auto Scaling Group (ASG) is when you define how many instances you want to set and you define a policy, for example, if you define that the ASG can have only up to 4 instances, this is what is going to be the rules. Auto Scaling Group will make sure that your instances never go beyond that and also, if one of the instances becomes unhealthy, another instance takes over.
+      Application Load Balancer (ALB) is to make sure that all the traffic coming across the instances are well and organized distributed. This feature has the power to balance the traffic to make sure and prevent the instances for being overwhelmed.
+      The advantages of having an integration of Auto Scaling Group and Application Load Balancer working together is that they provide powerful benefits. One of these benefits that are key in this resource is scalability. If there is a lot of traffic coming across the website then the ASG can handle it increasing the power and on the other hand you have ALB where handles and distribute very well the amount of traffic. Another advantage of them working together is the high availability they provide. For example, if there is a problem in one of the instances and this instance becomes unavailable, AGS automatically detects and replaces another instance straightaway. Not to mention about the optimization related to costs where if the traffic is low and no instances are being used, then AGS reduces the number of instances and consequently this affects in low costs</p>
   
-    <p>Clouds-Are-Us has contracted with the DigiTech corporation to host their website. The management at DigiTech wishes to automate the infrastructure deployment of their website and they would like to see a proof of concept. Your manager at Clouds-Are-Us would like you to set up an Auto-Scaling Group (ASG) integrated with an Application Load Balancer (ALB) on one of the subnets in a VPC that you will create (or a VPC that you will soon create). In addition to demonstrating this configuration, explain, using a real-world example, the benefits integrating the ASG combined with the ALB.</p>
 
-
+    <h4>#task5</h4>
     <p>Explain how the proposed DigiTech ALB works and what benefits it provides to DigiTech. Amazon Web Services (AWS) has a ‘Well Architecture Framework’ that includes several ‘Pillars of Architectural Excellence’ that provide a framework of cloud computing best practices. In your explanation, discuss two of the architectural design principals that would be utilized while planning the cloud architecture that would be provided by combining the ASG with the ALB.</p>
 
-    <p>Join me as we delve into the details of these tasks, exploring the intricacies of cloud computing, networking, and the strategic decisions that shaped the success of Clouds-Are-Us' foray into the digital frontier. This case study serves as a testament to my proficiency in cloud technologies, problem-solving acumen, and commitment to implementing industry best practices.</p>
+    <h4>Concepts of Auto Scaling and Elastic Load Balancing </h4>
+    <br>
+    <p>Imagine that you have a website for your Retailing Shop and you wish to implement one of the AWS services. The services you wish to implement are to improve scalability and traffic management. One of the features that AWS provides is Auto Scaling which is responsible to manage all the number of existing hosts and the number of visitors accessing your website. Bare in mind that a relatively high number of people are visiting your website at the same time. Consequently, your website needs more power due to a large number of accesses at the same time. Then the job of Auto Scaling is to add more computers automatically. However, if no customers are around, then the job of Auto Scaling is to remove unnecessary computers to save costs. When working together with Elastic Load Balancing (ELB), the job of this service is to distribute all the traffic from the website to every other instances. This is to make sure that not a single instance will be overwhelmed with traffic. Furthermore, this is to make sure that all instances are as well running smoothly. Also, when implementing Auto Scaling and Elastic Load Balancing to your website, this provides Higher Availability and Redundancy. When having High Availability and Redundancy, this is the key to guarantee that your website is always up and running 24/7 no matter what happen. Also, AWS Services provides various different Availability Zones for your computers in the same region. The advantage of this is that if one AZ has an issue, Auto Scaling works to shift the workload to another healthy AZ, so your website is always up and running. Additionally, the Redundancy resource makes copies of your instances acting as a backup for different AZs, making sure nothing goes wrong with the availability of your website.</p>
+
+
+
 <br>
 <p><a href="/portfolio page/index.html"><h4>Go Back to Portfolios</h4></a></p>
 </body>
